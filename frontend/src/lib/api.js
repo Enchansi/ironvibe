@@ -25,7 +25,20 @@ export const LIFT_LABELS = {
   deadlift: "Deadlift",
   ohp: "Overhead Press",
   row: "Barbell Row",
-  pullup: "Pull-Up (Weighted)",
+  pullup: "Pull-Up",
+  incline_bench: "Incline Bench",
+  leg_press: "Leg Press",
+  hip_thrust: "Hip Thrust",
+  rdl: "Romanian Deadlift",
+  lunges: "Lunges",
+  curl: "Bicep Curl",
+  tricep: "Tricep Pushdown",
+  lateral_raise: "Lateral Raise",
+  cable_row: "Cable Row",
 };
 
-export const LIFT_KEYS = ["bench", "squat", "deadlift", "ohp", "row", "pullup"];
+export const LIFT_KEYS = [
+  "bench", "squat", "deadlift", "ohp", "row", "pullup",
+  "incline_bench", "leg_press", "hip_thrust", "rdl",
+  "lunges", "curl", "tricep", "lateral_raise", "cable_row"
+];
