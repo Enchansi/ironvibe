@@ -34,9 +34,8 @@ bearer_scheme = HTTPBearer(auto_error=False)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("ironvibe")
 
-LIFTS = ["bench", "squat", "deadlift", "ohp", "row", "pullup"]
-LiftType = Literal["bench", "squat", "deadlift", "ohp", "row", "pullup"]
-
+LIFTS = ["bench", "squat", "deadlift", "ohp", "row", "pullup", "incline_bench", "leg_press", "hip_thrust", "rdl", "lunges", "curl", "tricep", "lateral_raise", "cable_row"]
+LiftType = Literal["bench", "squat", "deadlift", "ohp", "row", "pullup", "incline_bench", "leg_press", "hip_thrust", "rdl", "lunges", "curl", "tricep", "lateral_raise", "cable_row"]
 def hash_password(pw: str) -> str:
     return bcrypt.hashpw(pw.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
